@@ -1,0 +1,18 @@
+{% if UTTERANCES %}
+<!-- Utterances -->
+<div class="utterances-comments">
+    <script src="https://utteranc.es/client.js"
+            repo="{{ UTTERANCES_REPO }}"
+            issue-term="url"
+            theme="{{ UTTERANCES_THEME }}"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>
+        {{ _('Please enable JavaScript to view comments.') }}
+    </noscript>
+    </div>
+
+<!-- End Utterances -->
+{% endif %}
