@@ -200,6 +200,9 @@
             {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           {%- endif %}
 
+          {% if DISPLAY_HOME_ON_SIDEMENU %}
+          <li><a href="{{ SITEURL }}">{{ _('Home') }}</a></li>
+          {%- endif %}
           {% if DISPLAY_PAGES_ON_MENU %}
             {% for page in pages %}
               <li>
