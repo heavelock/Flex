@@ -99,6 +99,10 @@
     <link rel="icon" href="{{ FAVICON }}" type="image/x-icon">
   {% endif %}
 
+  {% if GOATCOUNTER %}
+    {% include "partial/goatcounter.html" %}
+  {% endif %}
+
   {% if GOOGLE_ANALYTICS %}
     {% include "partial/ga.html" %}
   {% endif %}
