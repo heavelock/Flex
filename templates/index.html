@@ -33,6 +33,7 @@
       {% endif %}
     </p>
   </header>
+  {% if not HOME_HIDE_SUMMARY %}
   <div>
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {% if  article.featured_image %}
@@ -49,6 +50,7 @@
     {% else %}
       {{ article.content }}
     {% endif %}
+  {% endif %}
   </div>
   {% if not loop.last %}
   <hr />
